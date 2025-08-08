@@ -1,0 +1,50 @@
+# Node.js dependencies
+node_modules/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# Terraform directories
+.terraform/
+
+# Terraform lock file (optional: track this if you want to lock provider versions)
+.terraform.lock.hcl
+
+# Local environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Crash logs
+crash.log
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+.ssh/
+.vscode/
+.idea/
+.vscode/
+.vscode/
+app/backend/venv/
+app/backend/..ssh/
+app/frontend/node_modules/
+app/frontend/dist/
+app/frontend/build/
+app/frontend/public/
+app/frontend/src/assets/
+app/frontend/src/components/
+app/frontend/src/pages/
+app/frontend/src/styles/
+app/frontend/src/utils/

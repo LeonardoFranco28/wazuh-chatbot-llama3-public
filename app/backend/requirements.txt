@@ -1,0 +1,10 @@
+paramiko 
+python-daemon 
+langchain-ollama 
+pytz 
+fastapi 
+uvicorn 
+requests
+websockets
+argparse
+langchain

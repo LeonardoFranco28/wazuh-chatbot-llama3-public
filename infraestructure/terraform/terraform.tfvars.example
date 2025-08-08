@@ -1,0 +1,115 @@
+# =============================================================================
+# IaNetworking Terraform Configuration Example
+# =============================================================================
+# 
+# Copia este archivo como terraform.tfvars y personaliza los valores
+# cp terraform.tfvars.example terraform.tfvars
+#
+# ⚠️  IMPORTANTE: Nunca subas terraform.tfvars al repositorio
+# =============================================================================
+
+# =============================================================================
+# DigitalOcean Configuration
+# =============================================================================
+
+# Tu token de API de DigitalOcean
+# Obtén tu token en: https://cloud.digitalocean.com/account/api/tokens
+do_token = "tu_digitalocean_api_token_aqui"
+
+# =============================================================================
+# SSH Keys Configuration
+# =============================================================================
+
+# Ruta a tu clave pública SSH
+# Genera las keys usando: ./scripts/security_setup.sh generate-keys
+sshKey = "~/.ssh/ia_networking_key.pub"
+
+# Ruta a tu clave privada SSH
+privateSshKey = "~/.ssh/ia_networking_key"
+
+# Clave SSH adicional para backend (opcional)
+privateSshToBackend = "~/.ssh/ia_networking_key.pub"
+
+# =============================================================================
+# VPC Configuration
+# =============================================================================
+
+# UUID de tu VPC en DigitalOcean
+# Puedes obtenerlo con: doctl compute vpc list
+vpc_uuid = "tu_vpc_uuid_aqui"
+
+# =============================================================================
+# Region Configuration
+# =============================================================================
+
+# Región de DigitalOcean donde desplegar
+# Opciones: nyc1, sfo2, ams3, sgp1, lon1, fra1, tor1, blr1
+region = "nyc1"
+
+# =============================================================================
+# Server Names (Opcional)
+# =============================================================================
+
+# Nombre del servidor Wazuh
+vm_name_wazuh = "ia-wazuh-server"
+
+# Nombre del servidor TPOT
+vm_tpot_name = "ia-tpot-server"
+
+# Nombre del servidor DVWA
+vm_dvwa_name = "ia-dvwa-server"
+
+# =============================================================================
+# Server Sizes (Opcional)
+# =============================================================================
+
+# Tamaño del servidor Wazuh
+# Opciones: s-1vcpu-1gb, s-2vcpu-2gb, s-2vcpu-4gb, s-4vcpu-8gb
+vm_wazuh_size = "s-2vcpu-4gb"
+
+# Tamaño del servidor TPOT
+vm_tpot_size = "s-4vcpu-8gb"
+
+# Tamaño del servidor DVWA
+vm_dvwa_size = "s-2vcpu-4gb"
+
+# =============================================================================
+# Image Configuration (Opcional)
+# =============================================================================
+
+# Imagen base para todos los servidores
+# Recomendado: ubuntu-24-04-x64
+image = "ubuntu-24-04-x64"
+
+# =============================================================================
+# Network Configuration (Opcional)
+# =============================================================================
+
+# Rango IP para VPC
+vpc_ip_range = "10.0.0.0/16"
+
+# Nombre del VPC
+vpc_name = "ia-networking-vpc"
+
+# =============================================================================
+# Security Notes
+# =============================================================================
+#
+# 🔒 Configuraciones de Seguridad Recomendadas:
+#
+# 1. Genera SSH keys específicas para este proyecto:
+#    ./scripts/security_setup.sh generate-keys
+#
+# 2. Configura hardening de SSH en los servidores:
+#    ./scripts/security_setup.sh setup-ssh
+#
+# 3. Configura firewall UFW:
+#    ./scripts/security_setup.sh setup-firewall
+#
+# 4. Instala herramientas de monitoreo:
+#    ./scripts/security_setup.sh setup-monitoring
+#
+# 5. Configuración completa de seguridad:
+#    ./scripts/security_setup.sh full-setup
+#
+# ============================================================================= 
