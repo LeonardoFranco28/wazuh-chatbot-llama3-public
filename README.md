@@ -30,7 +30,7 @@ IaNetworking es una plataforma integral de ciberseguridad que combina herramient
 - **Node.js** >= 18.0
 - **Python** >= 3.9
 - **DigitalOcean Account** con API Token
-- **Gcloud** Despliegue de infraestructura para Gcp
+- **Google Cloud** Service account | gcloud auth
 - **SSH Keys** configuradas
 
 ### 1. Configuración Inicial
@@ -454,16 +454,18 @@ free -h
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abrir un Pull Request
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ## 📞 Soporte
 
 Para soporte técnico o preguntas sobre seguridad:
-- Email: security@ia-networking.com
-- Issues: [GitHub Issues](https://github.com/tu-usuario/ia-networking/issues)
+- Email: leonardofrancoch28@gmail.com
+- Issues: [GitHub Issues](https://github.com/LeonardoFranco28/wazuh-chatbot-llama3-public/issues)
 
 ---
 
 **⚠️ ADVERTENCIA DE SEGURIDAD:** Este proyecto incluye herramientas de ciberseguridad y honeypots. Úsalo solo en entornos controlados y autorizados. El uso indebido puede ser ilegal. 
+
+
+### Recursos Analisados para la creación de este laboratorio y sistema
+- [Wazuh AI + LLM ](https://wazuh.com/blog/leveraging-artificial-intelligence-for-threat-hunting-in-wazuh/)
+- [Ollama](https://ollama.com/download/linux)
