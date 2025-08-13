@@ -469,3 +469,12 @@ Para soporte técnico o preguntas sobre seguridad:
 ### Recursos Analisados para la creación de este laboratorio y sistema
 - [Wazuh AI + LLM ](https://wazuh.com/blog/leveraging-artificial-intelligence-for-threat-hunting-in-wazuh/)
 - [Ollama](https://ollama.com/download/linux)
+- [NextJs](https://nextjs.org/)
+- [FastApi](https://fastapi.tiangolo.com/)
+- [Tpot](https://github.com/telekom-security/tpotce?tab=readme-ov-file#t-pot---the-all-in-one-multi-honeypot-platform)
+- [Dvwa](https://github.com/digininja/DVWA)
+- [GCP](https://cloud.google.com/)
+- [DigitalOcean](https://cloud.digitalocean.com/)
+- [Auth](https://www.better-auth.com/)
+- [Rag](https://aws.amazon.com/es/what-is/retrieval-augmented-generation/)
+- [Diagramas](https://excalidraw.com/)
